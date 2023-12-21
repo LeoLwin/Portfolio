@@ -4,10 +4,152 @@ import photo1 from "../assets/photo1.jpg";
 const Main = () => {
   return (
     <>
+      <ul className="nav fixed-top bg-success-subtle border border-dark-subtle">
+        <li className="nav-item col ">
+          <a
+            href="#top"
+            className="nav-link text-center text-dark"
+            aria-current="page"
+          >
+            <i className="fa-solid fa-user-tie"></i>
+          </a>
+        </li>
+        <li className="nav-item col ">
+          <a
+            href="#contact"
+            className="nav-link text-center text-dark"
+            aria-current="page"
+          >
+            Contact
+          </a>
+        </li>
+        <li className="nav-item col">
+          <a href="#aboutMe" className="nav-link text-center text-dark">
+            About Me
+          </a>
+        </li>
+        <li className="nav-item col">
+          <a href="#skill" className="nav-link text-center text-dark">
+            Skills
+          </a>
+        </li>
+        <li className="nav-item col">
+          <a href="#personalInfo" className="nav-link text-center text-dark">
+            Personal Info
+          </a>
+        </li>
+        <li className="nav-item col ">
+          <a href="#projects" className="nav-link text-center text-dark">
+            Projects
+          </a>
+        </li>
+        <li className="nav-item col ">
+          <a
+            href="#"
+            className="nav-link"
+            aria-current="page text-center text-dark"
+          ></a>
+        </li>
+      </ul>
+
       <div className="ps-5 pt-5 mt-3">
         <div className="row text-enter">
-          <div className="col-4 ">hello</div>
-          <div className="col-4 text-center">
+          <div className="col-4">
+            <div className="row">
+              <div className="col-4 ms-0 text-end">
+                <p
+                  className="position-relative fs-4 fw-bold"
+                  data-bs-toggle="tooltip"
+                  title="HTML5"
+                >
+                  <i className="fa-brands fa-html5"></i>
+                </p>
+                <p
+                  className="fs-4 fw-bold with-line"
+                  data-bs-toggle="tooltip"
+                  title="CSS3"
+                >
+                  <i className="fa-brands fa-css3-alt"></i>
+                </p>
+
+                <p
+                  className="fs-4 fw-bold"
+                  data-bs-toggle="tooltip"
+                  title="JavaScript"
+                >
+                  <i className="fa-brands fa-js"></i>
+                </p>
+                <p
+                  className="fs-4 fw-bold"
+                  data-bs-toggle="tooltip"
+                  title="Bootstrap"
+                >
+                  <i className="fa-brands fa-bootstrap"></i>
+                </p>
+                <p
+                  className="fs-4 fw-bold"
+                  data-bs-toggle="tooltip"
+                  title="React"
+                >
+                  <i className="fa-brands fa-react"></i>
+                </p>
+              </div>
+              <div className="col-4 me-0 text-end">
+                <p
+                  className="fs-4 fw-bold"
+                  data-bs-toggle="tooltip"
+                  title="Node.js & Express.js"
+                >
+                  <i className="fa-brands fa-node"></i>
+                </p>
+                <p
+                  className="position-relative fs-4 fw-bold"
+                  data-bs-toggle="tooltip"
+                  title="PHP"
+                >
+                  <i className="fa-brands fa-php"></i>
+                </p>
+                <p
+                  className="position-relative fs-4 fw-bold"
+                  data-bs-toggle="tooltip"
+                  title="Laravel"
+                >
+                  <i className="fa-brands fa-laravel"></i>
+                </p>
+                <p
+                  className="position-relative fs-4 fw-bold"
+                  data-bs-toggle="tooltip"
+                  title="Visual Studio Code"
+                >
+                  <i className="fa-solid fa-code"></i>
+                </p>
+              </div>
+              <div className="col-4 me-0 text-end">
+                <p
+                  className="position-relative fs-4 fw-bold"
+                  data-bs-toggle="tooltip"
+                  title="AWS(Amazon Web Service)"
+                >
+                  <i className="fa-solid fa-server"></i>
+                </p>
+                <p
+                  className="position-relative fs-4 fw-bold"
+                  data-bs-toggle="tooltip"
+                  title="Gi& Github"
+                >
+                  <i className="fa-brands fa-github"></i>
+                </p>
+                <p
+                  className="position-relative fs-4 fw-bold"
+                  data-bs-toggle="tooltip"
+                  title="Ubuntu 22.0.4"
+                >
+                  <i className="fa-brands fa-ubuntu"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-4 text-center" id="top">
             <img
               src={photo1}
               className="rounded-5 mb-3 "
@@ -18,24 +160,28 @@ const Main = () => {
           <div className="col-4 pt-5 d-flex flex-column">
             <div className="mt-auto me-3">
               <a
-                href="https://www.facebook.com/monday2021"
-                className="d-block mt-1 btn btn-outline-secondary rounded-start-pill"
-              >
-                <i className="fa-brands fa-square-facebook"></i>facebook
-              </a>
-              <a
                 href="https://www.linkedin.com/in/kaung-htet-lwin-b77462280/"
                 className="d-block mt-1 btn btn-outline-secondary rounded-start-pill"
               >
-                <i className="fa-brands fa-linkedin-in"></i>
-                Linkedin
+                <i className="fa-brands fa-linkedin-in"></i>Linkedin
+              </a>
+              <a
+                href="https://www.jobnet.com.mm/job-seeker/dashboard/profile"
+                className="d-block mt-1 btn btn-outline-secondary rounded-start-pill"
+              >
+                <i className="fa-regular fa-id-card"></i> JonNet.com.mm
               </a>
               <a
                 href="https://github.com/LeoLwin"
                 className="d-block mt-1 btn btn-outline-secondary rounded-start-pill"
               >
-                <i className="fa-brands fa-github"></i>
-                Github
+                <i className="fa-brands fa-github"></i>Github
+              </a>
+              <a
+                href="https://www.facebook.com/monday2021"
+                className="d-block mt-1 btn btn-outline-secondary rounded-start-pill"
+              >
+                <i className="fa-brands fa-square-facebook"></i> Facebook
               </a>
             </div>
           </div>
@@ -47,7 +193,7 @@ const Main = () => {
         </div>
         <hr />
 
-        <div className="container px-4">
+        <div className="container px-4" id="contact">
           <div className="row ">
             <div className="col-4 text-start">
               <h3>Contact</h3>
@@ -65,7 +211,7 @@ const Main = () => {
                 <i className="fa-solid fa-mobile"></i>: +95 9423732606
               </p>
             </div>
-            <div className="col text-start">
+            <div className="col text-start" id="aboutMe">
               <h3>About Me</h3>
               <p>
                 I have completed a private course in full-stack web
@@ -77,7 +223,7 @@ const Main = () => {
             </div>
             <hr />
           </div>
-          <div className="row text-start">
+          <div className="row text-start" id="skill">
             <div className="col-4 text-start">
               <h3>Skills</h3>
               <h6 className="ms-2">Frontend Development</h6>
@@ -118,7 +264,7 @@ const Main = () => {
               <h6 className="ms-2">Operating System </h6>
               <p className="ms-4 mb-1">Ubuntu 22.04.3</p>
             </div>
-            <div className="col-8 text-start">
+            <div className="col-8 text-start" id="personalInfo">
               <h3 className="mb-0">Perosonal Info</h3>
               <table className="table">
                 <tbody>
@@ -186,7 +332,7 @@ const Main = () => {
           </div>
         </div>
         <hr />
-        <div className="container px-4">
+        <div className="container px-4" id="projects">
           <div className="row ">
             <h3 className="text-start">Projects</h3>
             <div className="col-12 text-start">
@@ -195,6 +341,9 @@ const Main = () => {
               </p>
               <p>
                 <strong>Projct Name</strong> : Bank Adminstration
+                <a className="p-1 rounded" href="http://khl.znova.one/">
+                  To View My Project
+                </a>
               </p>
               <h5>Reason</h5>
               <p className="ms-2">
@@ -249,9 +398,9 @@ const Main = () => {
       </div>
 
       <footer className="text-center text-lg-start bg-body-tertiary text-muted ">
-        <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-gradient">
+        <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-gradient border border-dark-subtle">
           <div className="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
+            <span></span>
           </div>
 
           <div className="text-end">
@@ -365,13 +514,10 @@ const Main = () => {
           </div>
         </section> */}
 
-        <div
-          className="text-center p-4 bg-dark text-white"
-          style={{ backgroundColor: "rgba(1, 0, 0, 0.05)" }}
-        >
+        <div className="text-center p-4 bg-dark text-white">
           © 2023 Copyright:
           <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-            Kaung Htet Lwin
+            KaungHtetLwin
           </a>
         </div>
       </footer>
