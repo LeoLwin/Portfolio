@@ -1,0 +1,98 @@
+
+
+body {
+  /* font-family: 'Arial', sans-serif; */
+  /* font-family: 'Tektur', sans-serif; */
+  background-color: #D0E7D2;
+  /* background-image: url(../assets/viber.jpg); */
+}
+
+.photo{
+  background-attachment: fixed;
+}
+
+.textbox-bg-color{
+  background-color: blueviolet;
+}
+
+.pto {
+  font-family: 'Tektur', sans-serif;
+
+}
+
+.info{
+  font-family: 'Signika', sans-serif;
+  background-color: #F5F5DC;
+}
+
+
+.achieve {
+  /* background-image: url(../assets/znova1.png); */
+  font-family: 'Signika', sans-serif;
+}
+/* Navigation bar styles */
+/* .navbar {
+  background-color: #2c3e50;
+} */
+
+/* .navbar-brand, */
+/* .navbar-nav .nav-link {
+  color: #ffffff !important;
+} */
+
+/* Hero section styles */
+/* .hero-section {
+  background-color: #3498db;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+} */
+
+/* About section styles */
+/* .about-section {
+  background-color: #ecf0f1;
+  padding: 80px 0;
+} */
+
+/* Project card styles */
+/* .card {
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+} */
+
+/* .card:hover {
+  transform: scale(1.05);
+} */
+
+/* Projects section styles */
+/* .projects-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+} */
+
+/* Project card image */
+/* .card-img-top {
+  height: 200px;
+  object-fit: cover;
+} */
+
+/* Contact section styles */
+/* .contact-section {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 80px 0;
+} */
+
+/* Footer styles */
+/* .footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+} */
