@@ -3,7 +3,7 @@
 body {
   /* font-family: 'Arial', sans-serif; */
   /* font-family: 'Tektur', sans-serif; */
-  background-color: #D0E7D2;
+  background-color: #0F2C59;
   /* background-image: url(../assets/viber.jpg); */
 }
 
@@ -24,11 +24,31 @@ body {
   font-family: 'Signika', sans-serif;
   background-color: #F5F5DC;
 }
+.portfolio{
+  background-color: #EBE3D5;
+}
+.skill_skill_body{
+  background-color: #FFEBD8;
+}
+.skill_skill_head{
+  background-color: #213555;
+}
 
+.education{
+  background-color: #213555;
+}
+.experiece{
+  background-color: #213555;
+/* padding-top: 2;  */
+}
 
+.project{
+  background-color: #213555;
+}
 .achieve {
   /* background-image: url(../assets/znova1.png); */
   font-family: 'Signika', sans-serif;
+  background-color: AEC3AE;
 }
 /* Navigation bar styles */
 /* .navbar {

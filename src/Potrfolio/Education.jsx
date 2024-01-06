@@ -1,10 +1,21 @@
+import "./Portfolio.css";
 const Education = () => {
   return (
     <div className="info border border-info px-5 pt-5 rounded-4">
-      <h4>(2017)Diploma in Computer Studies</h4>
-      <p>Pyay University, Pyay</p>
-      <h4>(2016)Bachelor of Science (Zoology)</h4>
-      <p>Pyay University, Pyay</p>
+      <div className="mb-5 border border-dark px-5 pt-5 rounded-start-pill education text-white">
+        <h4>
+          <strong className="">Diploma in Computer Studies </strong>(2017)
+        </h4>
+        <p className="text-center ">Pyay University, Pyay</p>
+        <hr />
+      </div>
+      <div className="mb-5 border border-dark px-5 pt-5 rounded-start-pill education text-white ">
+        <h4>    
+          <strong>Bachelor of Science (Zoology)</strong>(2016)
+        </h4>
+        <p className="text-center ">Pyay University, Pyay</p>
+        <hr />
+      </div>
     </div>
   );
 };

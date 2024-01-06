@@ -1,8 +1,4 @@
-// Portfolio.js
-
 import "./Portfolio.css";
-import viber from "../assets/viber.jpg";
-
 import TextField from "@mui/material/TextField";
 import { Info } from "./Info";
 import Skills from "./Skills";
@@ -53,11 +49,11 @@ const Portfolio = () => {
     <div className="pto">
       <div
         id="home"
-        className="rounded-3 border border-danger-subtle mx-5 mt-5"
+        className="rounded-3 border border-danger-subtle mx-5 mt-5 portfolio"
       >
         <h3 className=" display-2 text-start ms-3">KAUNG HTET LWIN</h3>
         <p className="lead ms-3">Full-Stack Web Developer </p>
-        <div className="container">
+        <div className="container mt-0">
           <div className="row mt-0">
             <div className="col-3">
               <TextField
