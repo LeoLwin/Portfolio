@@ -7,52 +7,91 @@ import Education from "./Education";
 import Projects from "./Projects";
 import AchievementAndCerti from "./AchievementAndCerti";
 import Experience from "./Experience";
+import View from "./View";
+import Contact from "./Contact";
 
 const Portfolio = () => {
   let a = <i className="fa-solid fa-person text-xl-start"></i>;
   const [activeIndex, setActiveIndex] = useState(0);
 
   const components = [
+    <View key="view" />,
     <Info key="info" />,
     <Skills key="skill" />,
     <Experience key="experience" />,
     <Education key="education" />,
     <AchievementAndCerti key="achevement" />,
     <Projects key="projects" />,
+    <Contact key="contact" />,
   ];
 
-  const toggleInfo = () => {
+  const toggleView = () => {
     setActiveIndex(0);
   };
 
-  const toggleSkill = () => {
+  const toggleInfo = () => {
     setActiveIndex(1);
   };
 
-  const toggleExperience = () => {
+  const toggleSkill = () => {
     setActiveIndex(2);
   };
 
-  const toggleEducation = () => {
+  const toggleExperience = () => {
     setActiveIndex(3);
   };
 
-  const toggleAchievement = () => {
+  const toggleEducation = () => {
     setActiveIndex(4);
   };
 
-  const toggleProject = () => {
+  const toggleAchievement = () => {
     setActiveIndex(5);
   };
 
+  const toggleProject = () => {
+    setActiveIndex(6);
+  };
+
+  const toggleContact = () => {
+    setActiveIndex(7);
+  };
   return (
-    <div className="pto">
+    <div className="pto mb-5">
       <div
         id="home"
         className="rounded-3 border border-danger-subtle mx-5 mt-5 portfolio"
       >
-        <h3 className=" display-2 text-start ms-3">KAUNG HTET LWIN</h3>
-        <p className="lead ms-3">Full-Stack Web Developer </p>
+        <div className="d-flex align-items-center"  onDoubleClick={toggleView}>
+          <h3 className="display-2 text-start ms-3">KAUNG HTET LWIN</h3>
+          <div className=" ms-auto me-5 pe-2 text-end text-info h4">
+            <a
+              href="https://www.facebook.com/monday2021"
+              className="me-2 text-info h4"
+            >
+              <i className="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kaung-htet-lwin-b77462280/"
+              className="text-info h4 me-2"
+            >
+              <i className="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/LeoLwin" className="text-dark h4">
+              <i className="fa-brands fa-github"></i>{" "}
+            </a>
+          </div>
+        </div>
+        <div className="d-flex align-items-center">
+          <p className="mb-0 ms-3">Full-Stack Web Developer </p>
+          <button
+            className="ms-auto me-5 btn btn-outline-success rounded-1 text-success mb-2"
+            onClick={toggleContact}
+          >
+            Contact
+          </button>
+        </div>
+
         <div className="container mt-0">
           <div className="row mt-0">
             <div className="col-3">
@@ -128,13 +167,6 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="footer">
-        <div className="container">
-          <p>&copy; 2023 Your Portfolio. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 };

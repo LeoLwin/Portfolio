@@ -1,8 +1,6 @@
-import React from "react";
-
 const Experience = () => {
   return (
-    <div className="info border border-info px-5 pt-5 rounded-4">
+    <div className="info border border-info px-5 py-5 rounded-4 mb-3">
       <div className="experiece rounded text-white px-5 py-3">
         <h3 className="">
           <strong>Senior Assistant</strong>

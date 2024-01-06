@@ -58,6 +58,9 @@ const Projects = () => {
             <a href="http://khl.znova.one/" className="mb-5">
               To view My Project
             </a>
+            <p className="mb-0">UserName - white@gmail.com</p>
+            <p className="mb-3">Password - 123456</p>
+
           </div>
           <div className="carousel-item px-5 pt-5">
             <p>
