@@ -62,12 +62,12 @@ const Portfolio = () => {
         id="home"
         className="rounded-3 border border-danger-subtle mx-5 mt-5 portfolio"
       >
-        <div className="d-flex align-items-center"  onDoubleClick={toggleView}>
+        <div className="d-flex align-items-center" onDoubleClick={toggleView}>
           <h3 className="display-2 text-start ms-3">KAUNG HTET LWIN</h3>
           <div className=" ms-auto me-5 pe-2 text-end text-info h4">
             <a
               href="https://www.facebook.com/monday2021"
-              className="me-2 text-info h4"
+              className="me-2 facebook h4"
             >
               <i className="fa-brands fa-facebook"></i>
             </a>
@@ -99,7 +99,7 @@ const Portfolio = () => {
                 // id="outlined-read-only-input"
                 label={a}
                 defaultValue="Personal Information"
-                className="mt-5"
+                className="mt-5 cursor-pointer"
                 onClick={toggleInfo}
                 InputProps={{
                   readOnly: true,

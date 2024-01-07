@@ -5,12 +5,9 @@ import emailjs from "@emailjs/browser";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import DeleteIcon from "@mui/icons-material/Delete";
 import SendIcon from "@mui/icons-material/Send";
 import Stack from "@mui/material/Stack";
 import Alert from "@mui/material/Alert";
-import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-import { CheckCircleOutline } from "@mui/icons-material";
 
 const Contact = () => {
   const form = useRef();
