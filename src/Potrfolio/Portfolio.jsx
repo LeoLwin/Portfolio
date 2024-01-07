@@ -73,7 +73,7 @@ const Portfolio = () => {
             </a>
             <a
               href="https://www.linkedin.com/in/kaung-htet-lwin-b77462280/"
-              className="text-info h4 me-2"
+              className="linkdin h4 me-2"
             >
               <i className="fa-brands fa-linkedin"></i>
             </a>
