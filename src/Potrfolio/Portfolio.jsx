@@ -85,7 +85,7 @@ const Portfolio = () => {
         <div className="d-flex align-items-center">
           <p className="mb-0 ms-3">Full-Stack Web Developer </p>
           <button
-            className="ms-auto me-5 btn btn-outline-success rounded-1 text-success mb-2"
+            className="ms-auto me-5 btn btn-outline-secondary rounded-1 text-dark mb-2 border-dark"
             onClick={toggleContact}
           >
             Contact

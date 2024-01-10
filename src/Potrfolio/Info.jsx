@@ -4,28 +4,34 @@ import "./Portfolio.css";
 export const Info = () => {
   return (
     <div className="info border border-info px-5 pt-5 rounded-4">
-      <img
-        src={photo}
-        alt=""
-        width="150"
-        className="border border-light rounded mb-2"
-      />{" "}
-      <br />
-      <label htmlFor="" className="mb-2">
-        Date Of Birth : 03/08/1996
-      </label>
-      <br />
-      <label htmlFor="" className="mb-2">
-        NRC : 7/PaTaTa(N)119350
-      </label>
-      <br />
-      <label htmlFor="" className="mb-2">
-        Availability : Immediately
-      </label>
-      <br />
-      <label htmlFor="" className="mb-2">
-        Gender : Male
-      </label>
+      <div className="row">
+        <div className="col-4">
+          <img
+            src={photo}
+            alt=""
+            width="150"
+            className="border border-light rounded mb-2"
+          />
+        </div>
+        <div className="col-8 text-start">
+          <label htmlFor="" className="mb-2">
+            Date Of Birth : 03/08/1996
+          </label>
+          <br />
+          <label htmlFor="" className="mb-2">
+            NRC : 7/PaTaTa(N)119350
+          </label>
+          <br />
+          <label htmlFor="" className="mb-2">
+            Availability : Immediately
+          </label>
+          <br />
+          <label htmlFor="" className="mb-2">
+            Gender : Male
+          </label>
+        </div>
+      </div>
+
       <p>
         I have completed a private course in full-stack web development. Before
         this, I used to work in a bank, so I'm new to web development. But I'm

@@ -25,20 +25,20 @@ body {
   background-color: #F5F5DC;
 }
 .portfolio{
-  background-color: #EBE3D5;
+  background-color: #CAF0F8;
 }
 .skill_skill_body{
   background-color: #FFEBD8;
 }
 .skill_skill_head{
-  background-color: #213555;
+  background-color: #023E8A;
 }
 
 .education{
-  background-color: #213555;
+  background-color: #023E8A;
 }
 .experiece{
-  background-color: #213555;
+  background-color: #023E8A;
 /* padding-top: 2;  */
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 .project{
-  background-color: #213555;
+  background-color: #023E8A;
 }
 .achieve {
   /* background-image: url(../assets/znova1.png); */
@@ -58,7 +58,7 @@ body {
   background-color: AEC3AE;
 }
 .contact{
-  background-color: #213555;
+  background-color: #023E8A;
 
 }
 

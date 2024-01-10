@@ -56,6 +56,9 @@ const Contact = () => {
 
   return (
     <div className="info border border-info px-5 pt-3 rounded-4 ">
+      <h1 className="text-center h1 my-5">
+        Thank you for your time and consideration.
+      </h1>
       {showAlert && (
         <Stack sx={{ width: "100%" }} spacing={2}>
           <Alert icon={false} severity="success">
