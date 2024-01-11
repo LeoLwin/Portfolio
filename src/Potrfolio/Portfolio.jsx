@@ -95,77 +95,66 @@ const Portfolio = () => {
         <div className="container mt-0">
           <div className="row mt-0">
             <div className="col-3">
-              <TextField
-                // id="outlined-read-only-input"
-                label={a}
-                defaultValue="Personal Information"
-                className="mt-5 cursor-pointer"
-                onClick={toggleInfo}
-                InputProps={{
-                  readOnly: true,
-                }}
-              />
-              <br />
-              <TextField
-                id="outlined-read-only-input"
-                label={<i className="fa fa-tasks" aria-hidden="true"></i>}
-                defaultValue="Skills"
-                className="mt-3"
-                onClick={toggleSkill}
-                InputProps={{
-                  readOnly: true,
-                }}
-              />
-              <br />
-              <TextField
-                id="outlined-read-only-input"
-                label={<i className="fa fa-history" aria-hidden="true"></i>}
-                defaultValue="Experience"
-                className="mt-3"
-                onClick={toggleExperience}
-                InputProps={{
-                  readOnly: true,
-                }}
-              />
-              <br />
-              <TextField
-                id="outlined-read-only-input"
-                label={<i className="fa-solid fa-user-graduate"></i>}
-                defaultValue="Education "
-                className="mt-3"
-                onClick={toggleEducation}
-                InputProps={{
-                  readOnly: true,
-                }}
-              />
-              <br />
-              <TextField
-                id="outlined-read-only-input"
-                label={<i className="fa-solid fa-trophy"></i>}
-                defaultValue="Achievments & Certificate "
-                className="mt-3"
-                onClick={toggleAchievement}
-                InputProps={{
-                  readOnly: true,
-                }}
-              />
-              <br />
-              <TextField
-                id="outlined-read-only-input"
-                label={<i className="fa-solid fa-diagram-project"></i>}
-                defaultValue="Projects"
-                className="mt-3 mb-5"
-                onClick={toggleProject}
-                InputProps={{
-                  readOnly: true,
-                }}
-              />
-              <br />
+              <div className="mb-2 mt-5" onClick={toggleInfo}>
+                <p className="label-testa">
+                  <i className="fa-solid fa-person text-xl-start"></i>{" "}
+                </p>
+                <label htmlFor="" className="label-testb text-start pt-3 ">
+                  Personal information
+                </label>
+              </div>
+              <div className="mb-2" onClick={toggleSkill}>
+                <p className="label-testa">
+                  <i className="fa fa-tasks" aria-hidden="true"></i>
+                </p>
+                <label htmlFor="" className="btn label-testb text-start pt-3 ">
+                  Skill
+                </label>
+              </div>
+              <div className="mb-2" onClick={toggleExperience}>
+                <p className="label-testa">
+                  <i className="fa fa-history" aria-hidden="true"></i>{" "}
+                </p>
+                <label htmlFor="" className="label-testb text-start pt-3 ">
+                  Experience
+                </label>
+              </div>
+              <div className="mb-2" onClick={toggleEducation}>
+                <p className="label-testa">
+                  <i className="fa-solid fa-user-graduate"></i>
+                </p>
+                <label htmlFor="" className="label-testb text-start pt-3 ">
+                  Education
+                </label>
+              </div>
+              <div className="mb-2" onClick={toggleAchievement}>
+                <p className="label-testa">
+                  <i className="fa-solid fa-trophy"></i>
+                </p>
+                <label htmlFor="" className="label-testb text-start pt-3 ">
+                  Achevements
+                </label>
+              </div>
+              <div className="mb-2" onClick={toggleProject}>
+                <p className="label-testa">
+                  <i className="fa-solid fa-diagram-project"></i>{" "}
+                </p>
+                <label htmlFor="" className="label-testb text-start pt-3 ">
+                  Projects
+                </label>
+              </div>
             </div>
-
             <div className="col-9 mt-5">{components[activeIndex]}</div>
           </div>
         </div>
+        {/* <div>
+          <label className="btn btn-outline-dark label-testb text-start">
+            <p className="label-testa">
+              <i className="fa-brands fa-linkedin"></i>
+            </p>
+            Personal information
+          </label>
+        </div> */}
       </div>
     </div>
   );

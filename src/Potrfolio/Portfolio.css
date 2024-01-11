@@ -62,6 +62,33 @@ body {
 
 }
 
+.label-testa{
+  margin-left: 0;
+  position: absolute;
+  margin-top: -12px;
+  padding-left: 10px;
+  z-index: 1;
+}
+
+.label-testb{
+  width: 225px;
+  border-color: gray;
+  height: 58px;
+  padding-left: 30px;
+  margin-right: 50px;
+  padding-top: 0px;
+  margin-bottom: 5px;
+  font-family: 'Signika', sans-serif;
+  border-style: solid;
+  /* position: absolute; */
+  border-radius: 5px; 
+  border-width: thin;
+}
+.label-testb:hover{
+  border-style: dotted;
+}
+
+
 /* Navigation bar styles */
 /* .navbar {
   background-color: #2c3e50;
