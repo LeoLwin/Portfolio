@@ -91,6 +91,36 @@ const Contact = () => {
             />
             <div className="invalid-feedback ms-2">Name is required.</div>
             <br />
+            
+            <TextField
+              id="outlined-multiline-static"
+              label="Tell Me...."
+              multiline
+              name="message"
+              height="2"
+              rows={3}
+              placeholder="Get in touch and let's make things happen! "
+              value={textValues.message}
+              onChange={handleChange("message")}
+              className={isInvalid(textValues.message) ? "is-invalid" : ""}
+            />
+            <div className="invalid-feedback ms-2">Message is required.</div>
+            <br />
+          </div>
+          <div className="col">
+            {/* <TextField
+              id="outlined-multiline-static"
+              label="Tell Me...."
+              multiline
+              name="message"
+              height="2"
+              rows={3}
+              placeholder="Get in touch and let's make things happen! "
+              value={textValues.message}
+              onChange={handleChange("message")}
+              className={isInvalid(textValues.message) ? "is-invalid" : ""}
+            />
+            <div className="invalid-feedback ms-2">Message is required.</div> */}
             <TextField
               required
               id="outlined-required"
@@ -102,21 +132,6 @@ const Contact = () => {
               className={isInvalid(textValues.user_email) ? "is-invalid" : ""}
             />
             <div className="invalid-feedback ms-2">Email is required.</div>
-            <br />
-          </div>
-          <div className="col">
-            <TextField
-              id="outlined-multiline-static"
-              label="Tell Me...."
-              multiline
-              name="message"
-              rows={6}
-              placeholder="Get in touch and let's make things happen! "
-              value={textValues.message}
-              onChange={handleChange("message")}
-              className={isInvalid(textValues.message) ? "is-invalid" : ""}
-            />
-            <div className="invalid-feedback ms-2">Message is required.</div>
           </div>
           <Stack direction="row" spacing={2}>
             <Button
