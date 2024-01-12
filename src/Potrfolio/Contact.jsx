@@ -89,7 +89,7 @@ const Contact = () => {
               onChange={handleChange("user_name")}
               className={isInvalid(textValues.user_name) ? "is-invalid" : ""}
             />
-            <div className="invalid-feedback">Name is required.</div>
+            <div className="invalid-feedback ms-2">Name is required.</div>
             <br />
             <TextField
               required
@@ -101,7 +101,7 @@ const Contact = () => {
               onChange={handleChange("user_email")}
               className={isInvalid(textValues.user_email) ? "is-invalid" : ""}
             />
-            <div className="invalid-feedback">Email is required.</div>
+            <div className="invalid-feedback ms-2">Email is required.</div>
             <br />
           </div>
           <div className="col">
@@ -116,7 +116,7 @@ const Contact = () => {
               onChange={handleChange("message")}
               className={isInvalid(textValues.message) ? "is-invalid" : ""}
             />
-            <div className="invalid-feedback">Message is required.</div>
+            <div className="invalid-feedback ms-2">Message is required.</div>
           </div>
           <Stack direction="row" spacing={2}>
             <Button
@@ -124,7 +124,7 @@ const Contact = () => {
               endIcon={<SendIcon />}
               type="submit"
               onClick={sendEmail}
-              className="mb-2"
+              className="mb-2 ms-2"
             >
               Send
             </Button>
