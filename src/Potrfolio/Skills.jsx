@@ -1,6 +1,6 @@
 const Skills = () => {
   return (
-    <div className="info border border-info px-5 pt-3 rounded-4">
+    <div className="info skill border border-info px-5 pt-3 rounded-4">
       <div className="container">
         <div className="row">
           <div className="col">

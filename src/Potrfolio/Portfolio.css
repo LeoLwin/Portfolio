@@ -20,18 +20,26 @@ body {
 
 }
 
+
 .info{
   font-family: 'Signika', sans-serif;
   background-color: #F5F5DC;
+  cursor: pointer;
+  height: 420px;
 }
 .portfolio{
   background-color: #CAF0F8;
+}
+
+.skill{
+  height: 420px;
 }
 .skill_skill_body{
   background-color: #FFEBD8;
 }
 .skill_skill_head{
   background-color: #023E8A;
+
 }
 
 .education{
@@ -70,10 +78,13 @@ body {
   margin-top: -12px;
   padding-left: 10px;
   z-index: 1;
+  padding: 0 8px;
+  margin-left: 8px;
+  background-color: #CAF0F8;
 }
 
 .label-testb{
-  width: 225px;
+  width: 100%;
   border-color: gray;
   height: 58px;
   padding-left: 30px;

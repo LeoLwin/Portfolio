@@ -94,7 +94,7 @@ const Portfolio = () => {
 
         <div className="container mt-0">
           <div className="row mt-0">
-            <div className="col-3">
+            <div className="col-3 col-sl-12">
               <div className="mb-2 mt-5" onClick={toggleInfo}>
                 <p className="label-testa">
                   <i className="fa-solid fa-person text-xl-start"></i>{" "}
@@ -107,7 +107,7 @@ const Portfolio = () => {
                 <p className="label-testa">
                   <i className="fa fa-tasks" aria-hidden="true"></i>
                 </p>
-                <label htmlFor="" className="btn label-testb text-start pt-3 ">
+                <label htmlFor="" className="label-testb text-start pt-3 ">
                   Skill
                 </label>
               </div>
@@ -144,7 +144,7 @@ const Portfolio = () => {
                 </label>
               </div>
             </div>
-            <div className="col-9 mt-5">{components[activeIndex]}</div>
+            <div className="col-9 col-sl-12  mt-5">{components[activeIndex]}</div>
           </div>
         </div>
         {/* <div>
@@ -156,7 +156,6 @@ const Portfolio = () => {
           </label>
         </div> */}
       </div>
-    
     </div>
   );
 };
