@@ -62,13 +62,13 @@ const Portfolio = () => {
         id="home"
         className="rounded-3 border border-danger-subtle mx-5 mt-5 portfolio"
       >
-        <div className="d-flex align-items-center" onDoubleClick={toggleView}>
+        <div className="d-flex align-items-center col-sl-12" onDoubleClick={toggleView}>
           <h3 className="display-2 text-start ms-3">KAUNG HTET LWIN</h3>
           <div className=" ms-auto me-5 pe-2 text-end text-info h4">
             <a
               href="https://www.facebook.com/monday2021"
               className="me-2 facebook h4"
-            >
+            > 
               <i className="fa-brands fa-facebook"></i>
             </a>
             <a
@@ -94,7 +94,7 @@ const Portfolio = () => {
 
         <div className="container mt-0">
           <div className="row mt-0">
-            <div className="col-3 col-sl-12">
+            <div className="col-12 col-md-12 col-lg-3">
               <div className="mb-2 mt-5" onClick={toggleInfo}>
                 <p className="label-testa">
                   <i className="fa-solid fa-person text-xl-start"></i>{" "}
@@ -144,7 +144,7 @@ const Portfolio = () => {
                 </label>
               </div>
             </div>
-            <div className="col-9 col-sl-12  mt-5">{components[activeIndex]}</div>
+            <div className="col-12 col-md-12  col-lg-9 mt-5">{components[activeIndex]}</div>
           </div>
         </div>
         {/* <div>

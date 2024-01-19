@@ -1,7 +1,7 @@
 const Experience = () => {
   return (
     <div className="info border border-info px-5 py-5 rounded-4 mb-3">
-      <div className="experiece rounded text-white px-5 py-3">
+      <div className="experiece rounded text-white px-5 py-1 mb-2">
         <h3 className="">
           <strong>Senior Assistant</strong>
         </h3>
@@ -10,8 +10,7 @@ const Experience = () => {
         </p>
         <hr />
       </div>
-      <hr />
-      <div className="mb-1 experiece experiece rounded text-white px-5 py-3">
+      <div className="mb-2 experiece experiece rounded text-white px-5 py-1">
         <h3>
           <strong>Junior Assistant</strong>
         </h3>
@@ -21,8 +20,7 @@ const Experience = () => {
         </p>
         <hr />
       </div>
-      <hr />
-      <div className="mb-1 experiece experiece rounded text-white px-5 py-3">
+      <div className="mb-0 experiece experiece rounded text-white px-5 py-1">
         <h3>
           <strong>Marketing Assistant</strong>
         </h3>
