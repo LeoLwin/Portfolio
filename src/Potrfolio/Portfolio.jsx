@@ -1,5 +1,4 @@
 import "./Portfolio.css";
-import TextField from "@mui/material/TextField";
 import { Info } from "./Info";
 import Skills from "./Skills";
 import { useState } from "react";
@@ -11,7 +10,6 @@ import View from "./View";
 import Contact from "./Contact";
 
 const Portfolio = () => {
-  let a = <i className="fa-solid fa-person text-xl-start"></i>;
   const [activeIndex, setActiveIndex] = useState(0);
 
   const components = [

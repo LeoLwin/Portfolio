@@ -23,7 +23,7 @@ export const Info = () => {
           </label>
           <br />
           <label htmlFor="" className="mb-2">
-            Availability : Immediately
+            Availability : Not Yet
           </label>
           <br />
           <label htmlFor="" className="mb-2">

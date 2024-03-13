@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Portfolio.css";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
@@ -55,8 +55,8 @@ const Contact = () => {
   const isInvalid = (value) => !value.trim();
 
   return (
-    <div className="info border border-info px-5 pt-3 rounded-4 ">
-      <h1 className="text-center h1 my-5">
+    <div className="info border border-info px-5 rounded-4 mb-0">
+      <h1 className="text-center h2 my-5">
         Thank you for your time and consideration.
       </h1>
       {showAlert && (
@@ -90,8 +90,7 @@ const Contact = () => {
               className={isInvalid(textValues.user_name) ? "is-invalid" : ""}
             />
             <div className="invalid-feedback ms-2">Name is required.</div>
-            <br />
-            
+
             <TextField
               id="outlined-multiline-static"
               label="Tell Me...."
@@ -108,19 +107,7 @@ const Contact = () => {
             <br />
           </div>
           <div className="col">
-            {/* <TextField
-              id="outlined-multiline-static"
-              label="Tell Me...."
-              multiline
-              name="message"
-              height="2"
-              rows={3}
-              placeholder="Get in touch and let's make things happen! "
-              value={textValues.message}
-              onChange={handleChange("message")}
-              className={isInvalid(textValues.message) ? "is-invalid" : ""}
-            />
-            <div className="invalid-feedback ms-2">Message is required.</div> */}
+
             <TextField
               required
               id="outlined-required"
@@ -131,19 +118,20 @@ const Contact = () => {
               onChange={handleChange("user_email")}
               className={isInvalid(textValues.user_email) ? "is-invalid" : ""}
             />
-            <div className="invalid-feedback ms-2">Email is required.</div>
+            <div className="invalid-feedback ms-2 mb-5">Email is required.</div>
+            <Stack direction="row" spacing={2} className="pt-4">
+              <Button
+                variant="contained"
+                endIcon={<SendIcon />}
+                type="submit"
+                onClick={sendEmail}
+                className="mb-2 ms-2"
+              >
+                Send
+              </Button>
+            </Stack>
           </div>
-          <Stack direction="row" spacing={2}>
-            <Button
-              variant="contained"
-              endIcon={<SendIcon />}
-              type="submit"
-              onClick={sendEmail}
-              className="mb-2 ms-2"
-            >
-              Send
-            </Button>
-          </Stack>
+
         </div>
       </Box>
     </div>
