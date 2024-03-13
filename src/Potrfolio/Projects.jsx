@@ -31,7 +31,7 @@ const Projects = () => {
           ></button>
         </div>
         <div className="carousel-inner">
-          <div className="carousel-item active px-5 pt-5">
+          <div className="carousel-item active px-5 pt-5 col-md-6">
             <p>
               <strong className="h5">Technology</strong> : React, Node.js,
               Express, MongoDB
@@ -41,19 +41,12 @@ const Projects = () => {
               Administration
             </p>
             <p>
-              <strong className="h5">Reason</strong>I am currently working in a
-              banking administrative role and am actively engaged in a project
-              related to my current position.The project revolves around
-              managing employee information, calculating allowances and
-              salaries, and employs a tech stack featuring React, JavaScript,
-              Bootstrap, and React Context for the frontend. Axios is used to
-              retrieve data from the backend, where JWT tokens act as middleware
-              to secure access to web pages. User accounts can be created and
-              maintained, leveraging MongoDB as the backend database. Express
-              serves as the backend framework to handle server-side
-              functionalities. Salary calculations are executed on the backend,
-              and a date picker is implemented to facilitate monthly salary
-              viewing.
+              <strong className="h5">Reason</strong>I worked in banking administration last year and 
+              am currently engaged in a project focused on managing employee information and calculating 
+              salaries. The project uses React, JavaScript, Bootstrap, and React Context for the frontend,
+               with Axios for backend data retrieval. JWT tokens secure access, user accounts are managed 
+               with MongoDB, and Express handles server-side operations. Salary calculations occur on the 
+               backend, and a date picker facilitates monthly salary viewing.
             </p>
             <a href="http://khl.znova.one/" className="mb-5">
               To view My Project
@@ -62,7 +55,7 @@ const Projects = () => {
             <p className="mb-3">Password - 123456</p>
 
           </div>
-          <div className="carousel-item px-5 pt-5">
+          <div className="carousel-item px-5 pt-5 col-md-6">
             <p>
               <strong className="h5">Technology</strong> : React, JavaScript
             </p>
@@ -76,7 +69,7 @@ const Projects = () => {
               working with data in components.
             </p>
           </div>
-          <div className="carousel-item px-5 pt-5">
+          <div className="carousel-item px-5 pt-5 col-md-6">
             <p>
               <strong className="h5">Technology</strong> : React, JavaScript
             </p>
