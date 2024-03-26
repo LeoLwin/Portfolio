@@ -8,6 +8,7 @@ import AchievementAndCerti from "./AchievementAndCerti";
 import Experience from "./Experience";
 import View from "./View";
 import Contact from "./Contact";
+import SampleComponent from "./SampleComponent";
 
 const Portfolio = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -21,6 +22,7 @@ const Portfolio = () => {
     <AchievementAndCerti key="achievement" />,
     <Projects key="projects" />,
     <Contact key="contact" />,
+    <SampleComponent key="sampleComponen" />
   ];
 
   const toggleView = () => {
@@ -54,15 +56,22 @@ const Portfolio = () => {
   const toggleContact = () => {
     setActiveIndex(7);
   };
+
+  const toggleSample = () => {
+    setActiveIndex(8);
+  }
+
   return (
     <div className="pto mb-5">
       <div
         id="home"
         className="rounded-3 border border-danger-subtle mx-5 mt-5 portfolio"
       >
-        <div className="d-flex align-items-center col-sl-12" onDoubleClick={toggleView}>
-          <h3 className="display-2 text-start ms-3">KAUNG HTET LWIN</h3>
-          <div className=" ms-auto me-5 pe-2 text-end text-info h4">
+        <div className="d-flex flex-column justify-content-start col-sl-12" onDoubleClick={toggleView}>
+          <h3 className="display-2 fs-3 text-start ms-3 sm:fs-5 mt-2">KAUNG HTET LWIN</h3>
+          <p className="mb-0 ms-3 sm:fs-5">Full-Stack Web Developer </p>
+
+          {/* <div className=" ms-auto me-5 pe-2 text-end text-info h4">
             <a
               href="https://www.facebook.com/monday2021"
               className="me-2 facebook h4"
@@ -78,17 +87,34 @@ const Portfolio = () => {
             <a href="https://github.com/LeoLwin" className="text-dark h4">
               <i className="fa-brands fa-github"></i>{" "}
             </a>
+          </div> */}
+        </div>
+        <div className="d-flex justify-content-start mt-4">
+          <div className="ms-3 text-info h4">
+            <a
+              href="https://www.facebook.com/monday2021"
+              className="me-2 facebook h4"
+            >
+              <i className="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kaung-htet-lwin-b77462280/"
+              className="linkdin h4 me-2"
+            >
+              <i className="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/LeoLwin" className="text-dark h4">
+              <i className="fa-brands fa-github"></i>
+            </a>
+            <button
+              className=" ms-2 btn rounded-1 text-dark border-dark "
+              onClick={toggleContact}
+            >
+              Contact
+            </button>
           </div>
         </div>
-        <div className="d-flex align-items-center">
-          <p className="mb-0 ms-3">Full-Stack Web Developer </p>
-          <button
-            className="ms-auto me-5 btn rounded-1 text-dark mb-2 border-dark contactBtn"
-            onClick={toggleContact}
-          >
-            Contact
-          </button>
-        </div>
+
 
         <div className="container mt-0">
           <div className="row mt-0">
@@ -145,14 +171,6 @@ const Portfolio = () => {
             <div className="col-12 col-md-12  col-lg-9 mt-5">{components[activeIndex]}</div>
           </div>
         </div>
-        {/* <div>
-          <label className="btn btn-outline-dark label-testb text-start">
-            <p className="label-testa">
-              <i className="fa-brands fa-linkedin"></i>
-            </p>
-            Personal information
-          </label>
-        </div> */}
       </div>
     </div>
   );

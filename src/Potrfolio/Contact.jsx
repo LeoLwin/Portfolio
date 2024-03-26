@@ -55,14 +55,14 @@ const Contact = () => {
   const isInvalid = (value) => !value.trim();
 
   return (
-    <div className="info border border-info px-5 rounded-4 mb-0">
+    <div className="container info border border-info px-5 py-5 rounded-4 mb-0">
       <h1 className="text-center h2 my-5">
         Thank you for your time and consideration.
       </h1>
       {showAlert && (
         <Stack sx={{ width: "100%" }} spacing={2}>
           <Alert icon={false} severity="success">
-            This is a success alert !
+            This is a success alert!
           </Alert>
         </Stack>
       )}
@@ -72,13 +72,13 @@ const Contact = () => {
         ref={form}
         onSubmit={sendEmail}
         sx={{
-          "& .MuiTextField-root": { m: 1, width: "25ch" },
+          "& .MuiTextField-root": { m: 1 },
         }}
         noValidate
         autoComplete="off"
       >
         <div className="row">
-          <div className="col">
+          <div className="col-md-6">
             <TextField
               required
               id="outlined-required"
@@ -96,7 +96,6 @@ const Contact = () => {
               label="Tell Me...."
               multiline
               name="message"
-              height="2"
               rows={3}
               placeholder="Get in touch and let's make things happen! "
               value={textValues.message}
@@ -104,10 +103,8 @@ const Contact = () => {
               className={isInvalid(textValues.message) ? "is-invalid" : ""}
             />
             <div className="invalid-feedback ms-2">Message is required.</div>
-            <br />
           </div>
-          <div className="col">
-
+          <div className="col-md-6">
             <TextField
               required
               id="outlined-required"
@@ -119,19 +116,17 @@ const Contact = () => {
               className={isInvalid(textValues.user_email) ? "is-invalid" : ""}
             />
             <div className="invalid-feedback ms-2 mb-5">Email is required.</div>
-            <Stack direction="row" spacing={2} className="pt-4">
+            <Stack direction="row" spacing={2}>
               <Button
                 variant="contained"
                 endIcon={<SendIcon />}
                 type="submit"
                 onClick={sendEmail}
-                className="mb-2 ms-2"
               >
                 Send
               </Button>
             </Stack>
           </div>
-
         </div>
       </Box>
     </div>

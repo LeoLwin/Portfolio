@@ -1,11 +1,10 @@
 import photo from "../assets/photo1.jpg";
-import "./Portfolio.css";
 
-export const Info = () => {
+const SampleComponent = () => {
   return (
     <div className="container info border border-info pt-5 pb-5 rounded-4">
       <div className="row">
-        <div className="col-sm-3 col-md-6 col-lg-4">
+        <div className="col-sm-12 col-md-6 col-lg-4">
           <div className="text-start">
           <img
             src={photo}
@@ -42,4 +41,6 @@ export const Info = () => {
       </div>
     </div>
   );
-};
+}
+
+export default SampleComponent;
