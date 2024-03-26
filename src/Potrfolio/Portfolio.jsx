@@ -18,7 +18,7 @@ const Portfolio = () => {
     <Skills key="skill" />,
     <Experience key="experience" />,
     <Education key="education" />,
-    <AchievementAndCerti key="achevement" />,
+    <AchievementAndCerti key="achievement" />,
     <Projects key="projects" />,
     <Contact key="contact" />,
   ];
@@ -130,7 +130,7 @@ const Portfolio = () => {
                   <i className="fa-solid fa-trophy"></i>
                 </p>
                 <label htmlFor="" className="label-testb text-start pt-3 ">
-                  Achevements
+                  Achievements
                 </label>
               </div>
               <div className="mb-2" onClick={toggleProject}>
