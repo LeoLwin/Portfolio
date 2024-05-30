@@ -61,6 +61,7 @@ const Portfolio = () => {
     setActiveIndex(8);
   }
 
+
   return (
     <div className="pto mb-5">
       <div
@@ -119,7 +120,7 @@ const Portfolio = () => {
         <div className="container mt-0">
           <div className="row mt-0">
             <div className="col-12 col-md-12 col-lg-3">
-              <div className="mb-2 mt-5" onClick={toggleInfo}>
+              <div className="mb-2 mt-5" onClick={() => { toggleInfo(); trackButtonClick('android-apk', 'Download APK'); }}>
                 <p className="label-testa">
                   <i className="fa-solid fa-person text-xl-start"></i>{" "}
                 </p>
